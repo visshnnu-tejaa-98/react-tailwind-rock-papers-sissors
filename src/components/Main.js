@@ -20,6 +20,7 @@ const Main = () => {
   ]);
   const [userSelection, setUserSelection] = useState(null);
   const [computerSelection, setComputerSelection] = useState(null);
+  setComputerSelectionArray([namings.rock, namings.paper, namings.sissor]);
   const handleStartGame = () => {
     isInGame ? setBtnLabel("End Game") : setBtnLabel("Play Game");
     setIsInGame((prev) => !prev);
