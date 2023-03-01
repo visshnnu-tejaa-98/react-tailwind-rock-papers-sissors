@@ -22,7 +22,7 @@ const Main = () => {
   const [computerSelection, setComputerSelection] = useState(null);
   useEffect(() => {
     setComputerSelectionArray([namings.rock, namings.paper, namings.sissor]);
-  }, []);
+  }, [namings.rock, namings.paper, namings.sissor]);
   const handleStartGame = () => {
     isInGame ? setBtnLabel("End Game") : setBtnLabel("Play Game");
     setIsInGame((prev) => !prev);
